@@ -1,0 +1,35 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+    {
+        date: 'Actualmente...',
+        title: 'Cofundador y Desarrollador de Soluciones IoT',
+        description:
+        'Desarrollo y diseño de un sistema inteligente de monitoreo para cañerías (Sanit-Plast), que detecta y previene fugas de agua en tiempo real utilizando sensores avanzados y tecnología IoT.'
+    },
+    {
+        date: 'Marzo 2024',
+        title: 'Fundador y Diseñador Principal de HolyShirt',
+        description:
+        'Fundador de Holy Shirt, una marca de ropa enfocada en el diseño y producción de remeras oversize con un estilo urbano y moderno.'
+    },
+    {
+        date: 'Noviembre 2023',
+        title: 'Diseñador 3D Freelance',
+        description:
+        'Creación de modelos 3D detallados y realistas para proyectos de diseños de animación y videojuegos.'
+    }
+];
+
+---
+<ol class="relative mt-16">
+        {
+        EXPERIENCE.map((experience) => (
+            <li class="">
+            <ExperienceItem {...experience} />
+            </li>
+        ))
+        }
+</ol>
+

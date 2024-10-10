@@ -1,0 +1,54 @@
+---
+const personalImageAlt = "Daniel Ortiz"
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import CVIcon from '../components/icons/CV.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+---
+
+    <div class="max-w-xl">
+    <div class="flex gap-4 mb-4">
+        <img
+        class="rounded-full shadow-lg size-16"
+        src="../../public/img/dani-photo.jpeg"
+        alt="Dani Photo"
+        />
+        <a
+        href="https://www.linkedin.com/in/ramiro-daniel-ortiz-b2b114328/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+        >
+        <Badge>Disponible para trabajar</Badge>
+        </a>
+    </div>
+    <h1
+        class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+    >
+        Hola, soy Dani
+    </h1>
+    <p
+        class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-Cyan-200 [&>strong]:text-Cyan-500 [&>strong]:font-semibold dark:text-gray-300"
+    >
+        Estudiante en Gestión en Programación e Innovación Tecnológica y Digital. <strong
+        >Desarrollador Web, Diseñador 3D y Analista en Sistemas.</strong
+        > de Argentina. Especializado en crear soluciones y diseños únicos.
+    </p>
+    <nav class="flex gap-4 mt-8 flex-wrap">
+
+                <SocialPill href="https://www.linkedin.com/in/ramiro-daniel-ortiz-b2b114328/">
+                    <LinkedInIcon class="size-4 md:size-6" />
+                    LinkedIn
+                </SocialPill>
+                <SocialPill href="https://github.com/DaniOrPerf">
+                    <GitHubIcon class="size-4 md:size-6" />
+                    GitHub
+                </SocialPill>
+                <SocialPill href="../public/CV ORTIZ Ramiro Daniel.pdf">
+                    <CVIcon class="size-4 md:size-6" />
+                    CV
+                </SocialPill>
+
+            </nav>
+</div>
